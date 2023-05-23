@@ -1,0 +1,328 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    color: #29374E;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+header {
+    height: 680px;
+    background-color: #CBECFF;
+    background-image: url(/images/finkit.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.lang {
+    height: 68px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.lang a {
+    padding: 6px 5px;
+    color: #29374E;
+    text-decoration: none;
+}
+
+.lang a.active {
+    color: #0962E8;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 6px 5px;
+}
+.lang a:hover {
+    color: #29374E;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 6px 5px;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.header_inner {
+    max-width: 355px;
+}
+
+.header_inner p {
+    font-size: 22px;
+}
+
+button {
+    background-color: #0962E8;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 200px;
+    height: 52px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0753c5;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+
+}
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.properties>div {
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    width: calc(25% - 55px);
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+}
+.properties>div:hover{
+    transform: scale(1.06);
+}
+
+.properties p {
+    margin: 10px 0;
+    max-width: 164px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+h1 span {
+    color: #0962E8;
+}
+
+.products,
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.card,
+.product {
+    display: flex;
+    background-color: #E9F6FF;
+    border-radius: 30px;
+    max-width: 502px;
+    width: fit-content;
+}
+.product:hover{
+    transform: scale(1.02);
+}
+.product_desc {
+    padding: 5px 20px;
+}
+
+.product_image {
+    padding-right: 5px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.product img {
+    max-width: 218px;
+    min-width: 142px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.ben_desc {
+    width: 50%;
+    margin-right: 15px;
+}
+
+.ben_desc h1 {
+    text-align: left;
+}
+
+.ben_desc p {
+    max-width: 405px;
+    margin-bottom: 40px;
+}
+
+.ben_items {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.benefit {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    width: calc(50% - 35px);
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+.benefit:hover{
+    transform: scale(1.06);
+}
+
+footer {
+    background-color: #CBECFF;
+    text-align: center;
+}
+
+.alert {
+    border: 1px solid #0962E8;
+    border-radius: 10px;
+    padding: 0 30px;
+    position: absolute;
+    margin-top: -100px;
+    background: #CBECFF;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin: 10px;
+    border: 1px solid #0962E8;
+}
+
+.success {
+    color: seagreen;
+}
+
+.error {
+    color: palevioletred;
+}
+
+.card {
+    margin: 15px auto;
+}
+
+.card img {
+    margin: 15px;
+}
+
+.icon {
+    background: #E9F6FF;
+    border-radius: 50%;
+    color: #0962E8;
+    padding: 10px;
+    font-size: 25px;
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 13px;
+    }
+
+    header {
+        background-size: 540px;
+        background-position-x: 10%;
+        background-position-y: 0;
+        height: auto;
+    }
+
+    .header_inner {
+        margin-top: 340px;
+    }
+
+    .header_inner p {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 157px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    main,
+    .products,
+    .benefits {
+        margin: 0;
+    }
+
+    .product {
+        margin: 0 auto 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 343px;
+    }
+
+    .products,
+    .benefits {
+        display: block;
+    }
+
+    .product img {
+        width: 144px;
+    }
+
+    .properties {
+        margin-top: 20px;
+    }
+
+    .properties>div {
+        width: calc(50% - 25px);
+        margin-bottom: 20px;
+        padding: 10px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .properties>div svg {
+        margin: -15px 0 15px 0;
+    }
+
+    .ben_desc,
+    .ben_desc h1 {
+        width: unset;
+        margin: 0;
+        text-align: center;
+    }
+
+    .ben_desc p {
+        margin-bottom: 10px;
+    }
+
+    .ben_items {
+        width: unset;
+        padding: 30px 0 0 0;
+    }
+
+    .icon {
+        margin: -15px 0 15px 0;
+
+    }
+}
